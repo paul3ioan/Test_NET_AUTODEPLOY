@@ -20,5 +20,10 @@ namespace TestDeploy
 
             return Ok(data);
         }
+        [HttpGet("api/test")] 
+        public ActionResult<IEnumerable<string>> GetDataTest()
+        {
+            return Ok(new List<string>() { "abc", "cda" });
+        }
     }
 }
